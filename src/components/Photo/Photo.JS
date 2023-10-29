@@ -7,7 +7,7 @@ const Photo = () => {
 				className='object-cover rounded-full w-69 h-69'
 				src='./img/myPhoto.JPG'
 				alt='my_photo'
-				srcset=''
+				srcSet=''
 			/>
 		</div>
 	)
