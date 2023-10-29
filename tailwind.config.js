@@ -4,8 +4,13 @@ module.exports = {
 	content: ['./src/**/*.{html,js}'],
 	theme: {
 		extend: {
-			width: {},
-			height: {},
+			width: {
+				69: '17rem',
+				'half-plus': '57%',
+			},
+			height: {
+				69: '17rem',
+			},
 			colors: {
 				'gray-title': '#CCC',
 				'gray-item': '#A7A7A7',

@@ -2,11 +2,7 @@ import React from 'react'
 
 const TgIcon = ({ classN }) => {
 	return (
-		<a
-			href='https://www.linkedin.com/in/arsloddd'
-			target='_blank'
-			rel='noreferrer'
-		>
+		<a href='https://www.t.me/arsloddd' target='_blank' rel='noreferrer'>
 			<svg
 				className={classN}
 				xmlns='http://www.w3.org/2000/svg'

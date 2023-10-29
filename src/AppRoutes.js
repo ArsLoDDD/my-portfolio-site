@@ -1,6 +1,6 @@
 import React from 'react'
 import { Routes, Route } from 'react-router-dom'
-import MainPage from './pages/MainPage/MainPage'
+import HomePage from './pages/HomePage/HomePage'
 import StackPage from './pages/StackPage/StackPage'
 import ProjectPage from './pages/ProjectPage/ProjectPage'
 import AboutMePage from './pages/AboutMePage/AboutMePage'
@@ -10,7 +10,7 @@ const AppRoutes = () => {
 	return (
 		<Routes>
 			{/* Public Routes */}
-			<Route path='/' element={<MainPage />} />
+			<Route path='/' element={<HomePage />} />
 			<Route path='/stack' element={<StackPage />} />
 			<Route path='/project' element={<ProjectPage />} />
 			<Route path='/aboutMe' element={<AboutMePage />} />

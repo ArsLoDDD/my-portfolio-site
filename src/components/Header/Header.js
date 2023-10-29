@@ -1,6 +1,5 @@
 import React from 'react'
 import HeaderLinks from './HeaderLinks/HeaderLinks'
-import TgIcon from '../Icons/TgIcon'
 import IconItems from '../IconItems/IconItems'
 
 const linksDesktop = {
@@ -17,7 +16,7 @@ const Header = () => {
 			<div>
 				<span>LOGO</span>
 			</div>
-			<div className='flex gap-5'>
+			<div className='w-6/12 flex justify-between'>
 				<HeaderLinks links={linksDesktop} />
 				<IconItems />
 			</div>

@@ -1,7 +1,7 @@
 import React from 'react'
 import AboutMe from '../../components/AboutMe/AboutMe'
 
-const AboutMePage = () => {
+const HomePage = () => {
 	return (
 		<div className='pt-20'>
 			<AboutMe />
@@ -9,4 +9,4 @@ const AboutMePage = () => {
 	)
 }
 
-export default AboutMePage
+export default HomePage

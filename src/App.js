@@ -9,8 +9,8 @@ function App() {
 		<div className='w-full min-h-screen bg-gray-bg'>
 			<div className='w-10/12 h-2 m-auto'>
 				<Header />
+				<AppRoutes />
 			</div>
-			<AppRoutes />
 		</div>
 	)
 }
