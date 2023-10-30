@@ -1,13 +1,13 @@
 import React from 'react'
 
-const GitHubIcon = ({ classN }) => {
+const GitHubIcon = ({ classN, white }) => {
 	return (
 		<a href='https://www.github.com/ArsLoDDD' target='_blank' rel='noreferrer'>
 			<svg
 				className={classN}
 				aria-hidden='true'
 				xmlns='http://www.w3.org/2000/svg'
-				fill='#CCC'
+				fill={white ? 'white' : '#CCC'}
 				viewBox='0 0 20 20'
 			>
 				<path
