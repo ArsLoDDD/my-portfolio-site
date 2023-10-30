@@ -19,7 +19,7 @@ const StackIcons = () => {
 		<div className='flex items-center justify-center'>
 			<div className='w-8/12 flex justify-center items-center gap-10 flex-wrap'>
 				{icons.map(icon => (
-					<StackIcon icon={icon} />
+					<StackIcon icon={icon} key={icon} />
 				))}
 			</div>
 		</div>

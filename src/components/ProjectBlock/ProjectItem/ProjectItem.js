@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useRef, useEffect, useState } from 'react'
 import GitHubIcon from '../../Icons/GitHubIcon'
 import LinkIcon from '../../Icons/LinkIcon'
 
 const ProjectItem = ({ item }) => {
-	const { img, title, text, stack, link, isDone, liveLink, isScroll } = item
+	const { img, title, text, stack, link, isDone, liveLink } = item
+	const [isScroll, setIsScroll] = useState(false)
+	const ref = useRef()
+	useEffect(() => {
+		if (ref) {
+			ref.current.scrollHeight > 96 && setIsScroll(true)
+		}
+	}, [ref])
 	return (
 		<div className='bg-gray-bg-item w-72 h-120  rounded-lg text-gray-title pb-5 relative'>
 			{!isDone && (
@@ -15,7 +22,7 @@ const ProjectItem = ({ item }) => {
 				className='w-full h-2/5 bg-black object-cover rounded-t-lg'
 				src={`./img/${img}Project.jpeg`}
 				alt=''
-				srcset=''
+				srcSet=''
 			/>
 			<div className='w-10/12 m-auto'>
 				<article className='text-left mb-4 relative'>
@@ -25,13 +32,16 @@ const ProjectItem = ({ item }) => {
 						</div>
 					)}
 					<h3 className='text-2xl py-3 font-bold text-center'>{title}</h3>
-					<p className='text-xs text-left font-dmsans  overflow-ellipsis h-24 overflow-scroll'>
+					<p
+						ref={ref}
+						className='text-xs text-left font-dmsans  overflow-ellipsis h-24 overflow-scroll'
+					>
 						{text}
 					</p>
 				</article>
 				<div className='mb-6'>
 					<span className=''>Tech Stack:</span>
-					<span className='text-sm'> {stack}</span>
+					<span className='text-xs'> {stack}</span>
 				</div>
 				<div
 					className={`flex ${!liveLink ? 'justify-center' : 'justify-between'}`}
