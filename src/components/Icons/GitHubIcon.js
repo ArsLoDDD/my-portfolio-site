@@ -1,8 +1,12 @@
 import React from 'react'
 
-const GitHubIcon = ({ classN, white }) => {
+const GitHubIcon = ({
+	classN,
+	white,
+	link = 'https://www.github.com/ArsLoDDD',
+}) => {
 	return (
-		<a href='https://www.github.com/ArsLoDDD' target='_blank' rel='noreferrer'>
+		<a href={link} target='_blank' rel='noreferrer'>
 			<svg
 				className={classN}
 				aria-hidden='true'

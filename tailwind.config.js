@@ -11,7 +11,7 @@ module.exports = {
 			},
 			height: {
 				69: '17rem',
-				120: '30rem',
+				120: '28rem',
 			},
 			colors: {
 				'gray-title': '#CCC',
