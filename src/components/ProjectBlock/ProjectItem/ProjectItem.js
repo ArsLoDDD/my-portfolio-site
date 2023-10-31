@@ -1,16 +1,20 @@
 import React, { useRef, useEffect, useState } from 'react'
 import GitHubIcon from '../../Icons/GitHubIcon'
 import LinkIcon from '../../Icons/LinkIcon'
+import Spinner from '../../Spinner/Spinner'
 
 const ProjectItem = ({ item }) => {
 	const { img, title, text, stack, link, isDone, liveLink } = item
 	const [isScroll, setIsScroll] = useState(false)
+
 	const ref = useRef()
+
 	useEffect(() => {
 		if (ref) {
 			ref.current.scrollHeight > 96 && setIsScroll(true)
 		}
 	}, [ref])
+
 	return (
 		<div className='bg-gray-bg-item w-72 h-120  rounded-lg text-gray-title pb-5 relative'>
 			{!isDone && (
@@ -18,12 +22,14 @@ const ProjectItem = ({ item }) => {
 					In Progress
 				</div>
 			)}
+
 			<img
 				className='w-full h-2/5 bg-black object-center rounded-t-lg'
 				src={`./img/${img}Project.jpeg`}
 				alt=''
 				srcSet=''
 			/>
+
 			<div className='w-10/12 m-auto'>
 				<article className='text-left mb-4 relative'>
 					{isScroll && (

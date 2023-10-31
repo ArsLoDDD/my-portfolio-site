@@ -20,7 +20,7 @@ const StackIcon = ({ icon, index, isAdaptive = false }) => {
 				<div
 					onClick={() => dispatch(setInfo(index))}
 					className={`h-24 w-24 hover:scale-125 transition-transform duration-500 p-4 ${
-						index === activeIndex ? 'border-2 rounded-full' : ''
+						index === activeIndex ? 'border-2 rounded-full relative' : ''
 					}`}
 				>
 					<img src={`./img/${icon}Logo.png`} alt='' />

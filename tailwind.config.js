@@ -23,7 +23,10 @@ module.exports = {
 				poppins: ['Poppins', 'sans'],
 				dmsans: ['DM Sans', 'mono'],
 			},
+			spacing: {
+				'-3.25': '-3.25rem',
+			},
 		},
 	},
-	plugins: [],
+	plugins: [require('tailwind-scrollbar')],
 }

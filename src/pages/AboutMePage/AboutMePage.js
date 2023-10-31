@@ -1,6 +1,7 @@
 import React from 'react'
 import AboutMe from '../../components/AboutMe/AboutMe'
 import { LinearGradient } from 'react-text-gradients'
+import DownloadButton from '../../components/DownloadBtn/DownloadBtn'
 
 const aboutMeInfo = [
 	{
@@ -17,7 +18,8 @@ const AboutMePage = () => {
 	return (
 		<div className='h-full min-h-screen pt-20'>
 			<AboutMe />
-			<div className='w-10/12 m-auto pt-40'>
+			<DownloadButton />
+			<div className='w-10/12 m-auto'>
 				<article className='flex flex-col justify-center items-center mb-32'>
 					<LinearGradient
 						gradient={['to right', '#6B46C1 ,#EC4899']}
@@ -25,7 +27,7 @@ const AboutMePage = () => {
 					>
 						{aboutMeInfo[0].title}
 					</LinearGradient>
-					<p className='w-9/12 text-2xl text-white font-poppins  text-left leading-normal'>
+					<p className='w-8/12 text-2xl text-white font-poppins  text-center leading-normal'>
 						{aboutMeInfo[0].text}
 					</p>
 				</article>
