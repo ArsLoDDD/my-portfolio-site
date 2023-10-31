@@ -7,11 +7,11 @@ const blockInfo = [
 	' Technologies I’ve been working with recently',
 ]
 
-const StackBlock = () => {
+const StackBlock = ({ isAdaptive = false }) => {
 	return (
 		<div>
 			<BlockName title={blockInfo[0]} text={blockInfo[1]} />
-			<StackIcons />
+			<StackIcons isAdaptive={isAdaptive} />
 		</div>
 	)
 }

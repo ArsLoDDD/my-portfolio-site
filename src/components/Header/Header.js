@@ -5,7 +5,7 @@ import Logo from '../Logo/Logo'
 
 const linksDesktop = {
 	Home: '/',
-	About: '/aboutMe',
+	'About Me': '/aboutMe',
 	'Tech Stack': '/stack',
 	Projects: '/project',
 	Contact: '/contact',

@@ -1,25 +1,30 @@
-import React from 'react'
+import React, { useState } from 'react'
 import StackIcon from './StackIcon/StackIcon'
 
 const icons = [
-	'api',
-	'css',
-	'git',
 	'html',
+	'css',
 	'js',
-	'mui',
 	'react',
 	'redux',
 	'sass',
 	'tw',
+	'mui',
+	'git',
+	'api',
 ]
 
-const StackIcons = () => {
+const StackIcons = ({ isAdaptive = false }) => {
 	return (
 		<div className='flex items-center justify-center'>
 			<div className='w-8/12 flex justify-center items-center gap-10 flex-wrap'>
-				{icons.map(icon => (
-					<StackIcon icon={icon} key={icon} />
+				{icons.map((icon, index) => (
+					<StackIcon
+						icon={icon}
+						key={icon}
+						index={index}
+						isAdaptive={isAdaptive}
+					/>
 				))}
 			</div>
 		</div>

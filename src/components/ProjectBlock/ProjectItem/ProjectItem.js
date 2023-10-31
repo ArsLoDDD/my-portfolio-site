@@ -19,7 +19,7 @@ const ProjectItem = ({ item }) => {
 				</div>
 			)}
 			<img
-				className='w-full h-2/5 bg-black object-cover rounded-t-lg'
+				className='w-full h-2/5 bg-black object-center rounded-t-lg'
 				src={`./img/${img}Project.jpeg`}
 				alt=''
 				srcSet=''
