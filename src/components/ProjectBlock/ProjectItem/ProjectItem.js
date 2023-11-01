@@ -18,7 +18,7 @@ const ProjectItem = ({ item }) => {
 	return (
 		<div className='bg-gray-bg-item w-72 h-120  rounded-lg text-gray-title pb-5 relative'>
 			{!isDone && (
-				<div className='absolute -right-6 bg-red-600 p-2 rounded-3xl rotate-45 font-poppins pointer-events-none'>
+				<div className='absolute -right-6 bg-red-600 p-2 rounded-3xl rotate-45 font-poppins pointer-events-none z-30'>
 					In Progress
 				</div>
 			)}
