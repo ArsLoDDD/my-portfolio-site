@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 const AboutMeText = () => {
 	return (
 		<div className='w-half-plus '>
-			<p className='text-white text-5xl leading-snug font-dmsans'>
+			<p className='text-white text-center md:text-left text-3xl md:text-5xl leading-snug font-dmsans'>
 				<span className='mr-4'> Hello!</span>
 				<motion.span
 					className='inline-block'

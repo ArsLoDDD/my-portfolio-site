@@ -87,7 +87,7 @@ const StackPage = () => {
 	}, [activeIndex, controls])
 
 	return (
-		<div className='h-full w-10/12 m-auto min-h-screen pt-20'>
+		<div className='h-full w-10/12 m-auto min-h-screen pt-20 2xl:flex 2xl:flex-col justify-evenly items-center 2xl:pt-0'>
 			<StackBlock isAdaptive={true} />
 			{activeIndex !== null && (
 				<motion.article
@@ -99,11 +99,11 @@ const StackPage = () => {
 				>
 					<LinearGradient
 						gradient={['to right', '#6B46C1 ,#EC4899']}
-						className='text-4xl font-bold font-dmsans mb-7'
+						className='text-4xl 2xl:text-5xl font-bold font-dmsans mb-7'
 					>
 						{infoStack[activeIndex].name}
 					</LinearGradient>
-					<p className='w-9/12 text-2xl text-white font-poppins  text-center leading-normal'>
+					<p className='w-full text-xl lg:w-9/12 md:text-2xl 2xl:text-3xl text-white font-poppins  text-center leading-normal'>
 						{infoStack[activeIndex].text}
 					</p>
 				</motion.article>

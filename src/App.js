@@ -1,9 +1,10 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 // router
 import AppRoutes from './AppRoutes'
 //components
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
+import useScreenSize from './hooks/useScreenSize'
 
 function App() {
 	return (

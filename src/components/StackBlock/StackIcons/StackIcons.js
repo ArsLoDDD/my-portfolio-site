@@ -17,7 +17,11 @@ const icons = [
 const StackIcons = ({ isAdaptive = false }) => {
 	return (
 		<div className='flex items-center justify-center'>
-			<div className='w-8/12 flex justify-center items-center gap-10 flex-wrap '>
+			<div
+				className={`${
+					isAdaptive ? 'w-11/12' : 'w-8/12'
+				} lg:w-8/12 flex justify-center items-center gap-10 flex-wrap `}
+			>
 				{icons.map((icon, index) => (
 					<StackIcon
 						icon={icon}

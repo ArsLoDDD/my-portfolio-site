@@ -23,22 +23,22 @@ const AboutMePage = () => {
 				<article className='flex flex-col justify-center items-center mb-32'>
 					<LinearGradient
 						gradient={['to right', '#6B46C1 ,#EC4899']}
-						className='text-4xl font-bold font-dmsans mb-7'
+						className='text-2xl text-center md:text-4xl 2xl:text-5xl font-bold font-dmsans mb-7'
 					>
 						{aboutMeInfo[0].title}
 					</LinearGradient>
-					<p className='w-8/12 text-2xl text-white font-poppins  text-center leading-normal'>
+					<p className='w-11/12 xl:w-7/12 2xl:w-9/12 text-lg md:text-2xl 2xl:text-3xl text-white font-poppins  text-center leading-normal'>
 						{aboutMeInfo[0].text}
 					</p>
 				</article>
 				<article className='flex flex-col justify-center items-center mb-28'>
 					<LinearGradient
 						gradient={['to right', '#6B46C1 ,#EC4899']}
-						className='text-4xl font-bold font-dmsans mb-7'
+						className='text-2xl 2xl:text-5xl text-center md:text-4xl font-bold font-dmsans mb-7'
 					>
 						{aboutMeInfo[1].title}
 					</LinearGradient>
-					<p className='w-7/12 text-2xl text-white font-poppins  text-center leading-normal'>
+					<p className='w-10/12 xl:w-7/12 2xl:w-9/12 text-lg md:text-2xl 2xl:text-3xl text-white font-poppins  text-center leading-normal'>
 						{aboutMeInfo[1].text}
 					</p>
 				</article>

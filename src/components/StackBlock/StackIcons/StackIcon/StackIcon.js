@@ -19,7 +19,7 @@ const StackIcon = ({ icon, index, isAdaptive = false }) => {
 			{activeIndex !== null && (
 				<div
 					onClick={() => dispatch(setInfo(index))}
-					className={`h-24 w-24 hover:scale-125 transition-transform duration-500 p-4 ${
+					className={`h-20 w-20 lg:h-24 lg:w-24 2xl:w-32 2xl:h-32 hover:scale-125 transition-transform duration-500 p-2 lg:p-4 ${
 						index === activeIndex ? 'border-2 rounded-full relative' : ''
 					}`}
 				>

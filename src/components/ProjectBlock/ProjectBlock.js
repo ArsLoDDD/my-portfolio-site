@@ -60,7 +60,7 @@ const ProjectBlock = () => {
 	return (
 		<div className='w-full'>
 			<BlockName title={blockInfo[0]} text={blockInfo[1]} />
-			<div className='w-10/12 m-auto flex flex-wrap justify-center gap-10'>
+			<div className='w-10/12 m-auto flex flex-wrap justify-center gap-20 md:gap-10'>
 				{projectItems.map(item => (
 					<ProjectItem item={item} key={item.id} />
 				))}
