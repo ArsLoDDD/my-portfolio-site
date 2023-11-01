@@ -1,12 +1,17 @@
 import React from 'react'
 import TextLink from '../../TextLink/TextLink'
 
-const HeaderLinks = ({ links, burger = false }) => {
+const HeaderLinks = ({ links, burger = false, onClose }) => {
 	if (burger)
 		return (
 			<div className='flex flex-col text-3xl text-center gap-16 mt-32'>
 				{Object.entries(links).map(link => (
-					<TextLink to={link[1]} text={link[0]} key={`${link[1]}${link[2]}`} />
+					<TextLink
+						onClose={onClose}
+						to={link[1]}
+						text={link[0]}
+						key={`${link[1]}${link[2]}`}
+					/>
 				))}
 			</div>
 		)

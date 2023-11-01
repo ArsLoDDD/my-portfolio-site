@@ -11,9 +11,15 @@ const BurgerMenu = ({ isOpen, onClose }) => {
 			animate={isOpen ? { opacity: 1, y: 0 } : { opacity: 0, y: -50 }}
 			exit={{ opacity: 0, y: -50 }}
 			transition={{ duration: 0.3 }}
-			className='h-full w-full min-h-screen fixed z-40 left-0 top-0 bg-gray-bg opacity-95 flex justify-center items-start'
+			className={`h-full w-full min-h-screen fixed ${
+				isOpen ? 'z-40' : '-z-40'
+			} left-0 top-0 bg-gray-bg opacity-95 flex justify-center items-start`}
 		>
-			<HeaderLinks links={linksDesktop} burger={true} onClose={onClose} />
+			<HeaderLinks
+				links={linksDesktop}
+				burger={true}
+				onClose={onClose}
+			/>
 
 			<div className='bottom-20 fixed'>
 				<IconItems big={true} />

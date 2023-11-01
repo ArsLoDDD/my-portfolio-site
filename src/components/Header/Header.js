@@ -21,7 +21,9 @@ const Header = () => {
 
 	return (
 		<header className='flex justify-between items-center py-6 relative'>
-			{screenSize === 'mobile' && <BurgerMenu isOpen={isBurgerOpen} />}{' '}
+			{screenSize === 'mobile' && (
+				<BurgerMenu onClose={setIsBurgerOpen} isOpen={isBurgerOpen} />
+			)}{' '}
 			<div>
 				<Logo />
 			</div>
