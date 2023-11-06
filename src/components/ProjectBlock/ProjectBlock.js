@@ -12,7 +12,7 @@ const projectItems = [
 		text: 'This is a Twitter clone project that replicates the full functionality of Twitter. It is a collaborative project that provides an excellent opportunity to learn how to work effectively in a team. I am taking a key role in front-end development for this project.',
 		stack: 'React, Redux, Material-UI, Formik',
 		link: 'https://www.github.com/FP1-2/final_project_2',
-		liveLink: 'http://www.twitterdanit.us-east-1.elasticbeanstalk.com',
+		liveLink: 'http://www.twitter-demo.us-east-1.elasticbeanstalk.com',
 		isDone: false,
 	},
 	{
